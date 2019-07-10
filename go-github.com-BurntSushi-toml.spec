@@ -4,7 +4,7 @@
 #
 Name     : go-github.com-BurntSushi-toml
 Version  : v0.3.1
-Release  : 2
+Release  : 3
 URL      : https://proxy.golang.org/github.com/!burnt!sushi/toml/@v/list
 Source0  : https://proxy.golang.org/github.com/!burnt!sushi/toml/@v/list
 Source1  : https://proxy.golang.org/github.com/!burnt!sushi/toml/@v/v0.3.1.info
@@ -37,7 +37,8 @@ data components for the go-github.com-BurntSushi-toml package.
 %install
 rm -fr %{buildroot}
 mkdir -p %{buildroot}/usr/share/goproxy/github.com/!burnt!sushi/toml/@v
-install -m 0644 %{SOURCE0} %{buildroot}/usr/share/goproxy/github.com/!burnt!sushi/toml/@v/list
+# Create list file using packaged versions
+echo v0.3.1 >> %{buildroot}/usr/share/goproxy/github.com/!burnt!sushi/toml/@v/list
 install -m 0644 %{SOURCE1} %{buildroot}/usr/share/goproxy/github.com/!burnt!sushi/toml/@v/v0.3.1.info
 install -m 0644 %{SOURCE2} %{buildroot}/usr/share/goproxy/github.com/!burnt!sushi/toml/@v/v0.3.1.mod
 install -m 0644 %{SOURCE3} %{buildroot}/usr/share/goproxy/github.com/!burnt!sushi/toml/@v/v0.3.1.zip
