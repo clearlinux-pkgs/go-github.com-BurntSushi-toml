@@ -4,7 +4,7 @@
 #
 Name     : go-github.com-BurntSushi-toml
 Version  : v0.3.1
-Release  : 3
+Release  : 4
 URL      : https://proxy.golang.org/github.com/!burnt!sushi/toml/@v/list
 Source0  : https://proxy.golang.org/github.com/!burnt!sushi/toml/@v/list
 Source1  : https://proxy.golang.org/github.com/!burnt!sushi/toml/@v/v0.3.1.info
